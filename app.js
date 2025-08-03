@@ -73,6 +73,8 @@ const sessionOptions = {
 // app.get("/", (req, res) => {
 //   res.send("Hi, I am root");
 // });
+// This is the correct solution to show your page
+
 
 app.use(session(sessionOptions));
 app.use(flash());
@@ -87,6 +89,11 @@ app.use((req, res, next) => {
   // console.log(res.locals.success); 
   res.locals.currUser = req.user;
   next();
+});
+
+app.get("/", async (req, res) => {
+  const allListings = await Listing.find({});
+  res.render("listings/index.ejs", { allListings });
 });
 
 // app.get("/demouser", async (req, res) => {
