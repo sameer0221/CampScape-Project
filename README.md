@@ -25,35 +25,6 @@ CampScape-Project is organized into:
 - Styled with **CSS**, potentially including frameworks like **Bootstrap** (if applicable).
 - Maintains a clear layout for campsite listings, detail views, forms, and review interfaces.
 
-### Folder Structure (reflecting your repo layout)
-/
-├── controllers/
-│ └── … (campground, review, user logic)
-├── models/
-│ └── … (User, Campground, Review Mongoose schemas)
-├── routes/
-│ └── … (routes for users, campgrounds, reviews)
-├── views/
-│ └── … (EJS templates for pages and partials)
-├── public/
-│ ├── css/
-│ ├── js/
-│ └── images/
-├── uploads/ (if used for file storage)
-├── utils/
-│ └── … (helper functions, error handlers)
-├── app.js / server.js
-├── middleware.js
-├── cloudConfig.js (if using Cloudinary or similar)
-├── package.json
-└── schema.js (if using schema validation helpers)
-
-yaml
-Copy
-Edit
-
----
-
 ##  Technologies Used
 
 - **Runtime & Server**: Node.js, Express.js  
