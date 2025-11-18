@@ -142,7 +142,3 @@ Create a Pull Request
 
 👤 Sameer Lonare
 📧 lonaresameer7@gmail.com
-
-🔗 LinkedIn
-
-💻 GitHub
